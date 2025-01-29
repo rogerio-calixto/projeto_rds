@@ -26,8 +26,8 @@ resource "aws_security_group" "sg-rds" {
   }
 
   tags = {
-    Name        = "${local.projeto}-sg-${var.ambiente}"
-    Projeto     = local.projeto
+    Name     = "${local.projeto}-sg-${var.ambiente}"
+    Projeto  = local.projeto
     Ambiente = var.ambiente
   }
 

@@ -3,8 +3,8 @@ resource "aws_secretsmanager_secret" "secret-rds" {
   name        = "${local.projeto}-proxy-${var.ambiente}"
   description = "Autenticacao RDS"
   tags = {
-    Name        = "${local.projeto}-proxy-${var.ambiente}"
-    Projeto     = local.projeto
+    Name     = "${local.projeto}-proxy-${var.ambiente}"
+    Projeto  = local.projeto
     Ambiente = var.ambiente
   }
 }

@@ -3,7 +3,7 @@ locals {
   now          = timestamp()
   projeto      = "rds"
   tipo_criacao = "terraform"
-  profile      = "tf-user"
+  profile      = "rds-user"
   account-id   = data.aws_caller_identity.current.account_id
   cidr_block   = "10.0.0.0/24"
   subnet_privada_config = [
