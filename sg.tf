@@ -4,6 +4,14 @@ resource "aws_security_group" "sg-rds" {
   vpc_id      = module.vpc.aws_vpc_id
 
   ingress {
+    description = "libera acesso ao RDS a todos os recursos vinculados a este Security Group"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    self         = true
+  }
+
+  ingress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
