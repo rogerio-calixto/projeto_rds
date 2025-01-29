@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg-rds" {
   name        = "${local.projeto}-sg-rds-${var.ambiente}"
   description = "Habilita acesso ao RDS"
-  vpc_id      = module.vpc.aws_vpc_id
+  vpc_id      = module.vpc.aws_vpc.id
 
   ingress {
     description = "libera acesso ao RDS a todos os recursos vinculados a este Security Group"
