@@ -23,19 +23,19 @@ variable "regiao_names" {
 variable "databasename" {
   type        = string
   description = "DB name"
-  default = "estudo_rds_db"
+  default     = "estudo_rds_db"
 }
 
 variable "username" {
   type        = string
   description = "DB username"
-  default = "admin"
+  default     = "admin"
 }
 
 variable "password" {
   type        = string
   description = "DB password"
-  default = "senha123456"
+  default     = "senha123456"
 }
 
 variable "identifier" { default = "estudo_rds" }
