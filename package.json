@@ -1,7 +1,7 @@
 {
   "name": "projeto_terraform",
   "version": "1.0.0",
-  "description": "Infra Estrutura Fargate para Billing Tags",
+  "description": "Infra Estrutura para estudo RDS",
   "main": "index.js",
   "scripts": {
     "clear": "cls",
