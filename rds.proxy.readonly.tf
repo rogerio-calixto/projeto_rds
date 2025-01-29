@@ -6,7 +6,7 @@
 #   require_tls            = true
 #   role_arn               = aws_iam_role.rds-proxy-role.arn
 #   vpc_security_group_ids = [aws_security_group.sg-rds.id]
-#   vpc_subnet_ids         = module.vpc.public-subnet_ids
+#   vpc_subnet_ids         = module.vpc.subnet_publica_ids
 
 #   auth {
 #     auth_scheme = "SECRETS"

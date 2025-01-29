@@ -59,7 +59,7 @@ resource "aws_db_instance" "rds_db" {
 
 resource "aws_db_subnet_group" "subnetGroups" {
   name       = "subnetgroups"
-  subnet_ids = module.vpc.public-subnet_ids
+  subnet_ids = module.vpc.subnet_publica_ids
 
 
   tags = {
