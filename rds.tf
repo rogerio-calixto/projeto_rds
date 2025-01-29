@@ -46,8 +46,8 @@ resource "aws_db_instance" "rds_db" {
   backup_retention_period         = 1
 
   tags = {
-    Project     = local.projeto
-    Environment = var.ambiente
+    Projeto     = local.projeto
+    Ambiente = var.ambiente
     AutoStart   = "Yes"
     AutoStop    = "Yes"
   }
@@ -64,7 +64,7 @@ resource "aws_db_subnet_group" "subnetGroups" {
 
   tags = {
     Name        = "Subnet Groups"
-    Project     = local.projeto
-    Environment = var.ambiente
+    Projeto     = local.projeto
+    Ambiente = var.ambiente
   }
 }

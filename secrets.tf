@@ -4,8 +4,8 @@ resource "aws_secretsmanager_secret" "secret-rds" {
   description = "Autenticacao RDS"
   tags = {
     Name        = "${local.projeto}-proxy-${var.ambiente}"
-    Project     = local.projeto
-    Environment = var.ambiente
+    Projeto     = local.projeto
+    Ambiente = var.ambiente
   }
 }
 
@@ -24,9 +24,4 @@ resource "aws_secretsmanager_secret_version" "sversion" {
     "dbInstanceIdentifier" : "}"
    }
    EOF
-
-  lifecycle {
-    prevent_destroy = true
-    ignore_changes  = [secret_string]
-  }
 }

@@ -27,8 +27,8 @@ resource "aws_security_group" "sg-rds" {
 
   tags = {
     Name        = "${local.projeto}-sg-${var.ambiente}"
-    Project     = local.projeto
-    Environment = var.ambiente
+    Projeto     = local.projeto
+    Ambiente = var.ambiente
   }
 
   depends_on = [module.vpc]

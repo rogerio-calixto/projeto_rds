@@ -12,8 +12,8 @@
 #   vpc_security_group_ids = [aws_security_group.sg-rds.id]
 
 #   tags = {
-#     Project     = local.projeto
-#     Environment = var.ambiente
+#     Projeto     = local.projeto
+#     Ambiente = var.ambiente
 #     Replica     = "Yes"
 #   }
 

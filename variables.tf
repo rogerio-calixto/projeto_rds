@@ -29,7 +29,7 @@ variable "databasename" {
 variable "username" {
   type        = string
   description = "DB username"
-  default     = "admin"
+  default     = "root"
 }
 
 variable "password" {
@@ -38,13 +38,15 @@ variable "password" {
   default     = "senha123456"
 }
 
-variable "identifier" { default = "estudo_rds" }
+variable "identifier" { default = "estudo-rds" }
 
 variable "avaiable_zones" {
   type        = list(string)
   description = "Avaiable zones"
+  default     = [""]
 }
 
 variable "arn_assumerole" {
-  type = string
+  type    = string
+  default = ""
 }
