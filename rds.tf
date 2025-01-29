@@ -44,6 +44,7 @@ resource "aws_db_instance" "rds_db" {
   enabled_cloudwatch_logs_exports = ["postgresql", "upgrade"]
   performance_insights_enabled    = false
   backup_retention_period         = 1
+  publicly_accessible             = true
 
   tags = {
     Projeto   = local.projeto
