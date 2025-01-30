@@ -31,5 +31,5 @@ resource "aws_security_group" "sg-rds" {
     Ambiente = var.ambiente
   }
 
-  depends_on = [module.vpc]
+  # depends_on = [module.vpc]
 }
