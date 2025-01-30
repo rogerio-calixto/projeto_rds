@@ -1,19 +1,20 @@
 variable "ambiente" {
   type        = string
   description = "ambiente para o recurso"
-  default     = "dev"
+  default     = "hml"
 }
 
 variable "regiao" {
   type        = string
   description = "regiao onde sera criado o recurso"
-  default     = "us-east-1"
+  default     = "sa-east-1"
 }
 
 variable "regiao_names" {
   description = "regioes disponíveis"
   default = {
     us-east-1 = "virginia"
+    sa-east-1 = "saopaulo"
     us-east-2 = "ohio"
     us-west-1 = "california"
     us-west-2 = "oregon"
