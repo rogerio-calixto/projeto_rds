@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clear": "cls",
-    "init-branch": "terraform init -reconfigure -backend-config=\".\\backend-config\\hml.conf\"",
+    "init-branch": "terraform init -reconfigure -backend-config=\".\\backend-config\\dev.conf\"",
     "format": "terraform fmt -recursive",
     "update_templates": "terraform get -update",
     "validate": "terraform validate",
-    "plan": "terraform plan -var-file=\"hml.tfvars\" -out=\"tfplan.out\"",
+    "plan": "terraform plan -var-file=\"dev.tfvars\" -out=\"tfplan.out\"",
     "apply": "terraform apply \"tfplan.out\"",
     "infra_costs": "infracost breakdown --path=. --show-skipped --terraform-var-file dev.tfvars",
     "output": "terraform output -json"
