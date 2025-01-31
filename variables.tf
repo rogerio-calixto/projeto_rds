@@ -1,13 +1,11 @@
 variable "ambiente" {
   type        = string
   description = "ambiente para o recurso"
-  default     = "dev"
 }
 
 variable "regiao" {
   type        = string
   description = "regiao onde sera criado o recurso"
-  default     = "us-east-1"
 }
 
 variable "regiao_names" {

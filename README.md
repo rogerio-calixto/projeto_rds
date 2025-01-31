@@ -13,7 +13,16 @@
 Projeto de estudo de RDS
 
 # TF Comands
-terraform destroy -auto-approve
+
+## Destroy geral
+terraform destroy -var-file="hml.tfvars" -auto-approve
+
+## Destroy recursos especificos
+terraform destroy -target="module.vpc" -var-file="hml.tfvars" -auto-approve
+
+## Aplicar recursos especificos
+terraform apply -target="module.vpc" -var-file="hml.tfvars" -auto-approve
+terraform apply -target="aws_security_group.sg-rds" -var-file="hml.tfvars" -auto-approve
 
 # Remover Secrets
 aws secretsmanager delete-secret --force-delete-without-recovery --secret-id  rds-proxy-dev --region us-east-1 --profile rds-user
